@@ -1,0 +1,11 @@
+{
+    "name": "ajax-api/api",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Инч",
+            "email": "in4in.q@gmail.com"
+        }
+    ],
+    "require": {}
+}
