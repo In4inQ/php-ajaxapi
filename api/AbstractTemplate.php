@@ -11,9 +11,6 @@ namespace Api;
 abstract class AbstractTemplate
 {
 
-	const DIR_TMP = __DIR__ . '/../../docs/';
-	const DIR_SAVE = __DIR__ . '/../../userdocs/';
-
 	public $file;
 	public $filename;
 
