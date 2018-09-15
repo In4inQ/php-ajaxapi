@@ -1,11 +1,15 @@
 {
     "name": "ajax-api/api",
+    "version": "1.0",
+    "description": "PHP code for api",
     "type": "library",
+    "license": "unlicense",
     "authors": [
         {
             "name": "Инч",
             "email": "in4in.q@gmail.com"
         }
     ],
+    "minimum-stability": "stable",
     "require": {}
 }
