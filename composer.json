@@ -1,7 +1,7 @@
 {
     "name": "ajax-api/api",
     "version": "1.2",
-    "description": "PHP code for api",
+    "description": "A set of abstract classes for organizing an elementary API on the PHP side",
     "type": "library",
     "license": "unlicense",
     "authors": [
