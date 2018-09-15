@@ -82,7 +82,7 @@ $config = new Config;
 $method = $response->getParam('method');
 if($config->hasMethod($method)){
 
-    $method = $config->getMethod($method);
+    $method = $config->getMethodClass($method);
     $method = new $method;
     
     //next string for example    
