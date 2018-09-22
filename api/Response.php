@@ -17,10 +17,11 @@ class Response{
 	 */
 	public function __construct(){
 
-		$this->get = $_GET;
 		$this->post = $_POST;
 		$this->files = $_FILES;
 		$this->cookie = $_COOKIE;
+
+		$this->get = array_map('urldecode', $_GET);
 
 		if($_SERVER["CONTENT_TYPE"] === 'application/json'){
 			$data = file_get_contents('php://input');
@@ -62,7 +63,7 @@ class Response{
 	 * @return null|string
 	 */
 	public function getParam(string $name) : ?string{
-		return array_key_exists($name, $this->get) ? urldecode($this->get[$name]) : null;
+		return array_key_exists($name, $this->get) ? $this->get[$name] : null;
 	}
 
 	/**
