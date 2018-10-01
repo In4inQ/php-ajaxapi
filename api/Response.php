@@ -10,7 +10,7 @@ class Response{
 	public $post = [];
 	public $files = [];
 	public $cookie = [];
-	public $json = [];
+//	public $json = [];
 
 	/**
 	 * API_Response constructor.
@@ -23,24 +23,24 @@ class Response{
 
 		$this->get = array_map('urldecode', $_GET);
 
-		if(stripos($_SERVER["CONTENT_TYPE"], 'application/json')){
-			$data = file_get_contents('php://input');
-			$data = json_decode($data, true);
-			if($data){
-				$this->json = $data;
-			}
-		}
+//		if(stripos($_SERVER["CONTENT_TYPE"], 'application/json')){
+//			$data = file_get_contents('php://input');
+//			$data = json_decode($data, true);
+//			if($data){
+//				$this->json = $data;
+//			}
+//		}
 
 
 	}
 
-	/**
-	 * @param string $name
-	 * @return mixed|null
-	 */
-	public function getJson(string $name){
-		return array_key_exists($name, $this->json) ? $this->json[$name] : null;
-	}
+//	/**
+//	 * @param string $name
+//	 * @return mixed|null
+//	 */
+//	public function getJson(string $name){
+//		return array_key_exists($name, $this->json) ? $this->json[$name] : null;
+//	}
 
 	/**
 	 * @param string $name

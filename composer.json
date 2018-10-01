@@ -1,6 +1,6 @@
 {
     "name": "ajax-api/api",
-    "version": "1.5",
+    "version": "1.6",
     "description": "A set of abstract classes for organizing an elementary API on the PHP side",
     "type": "library",
     "license": "unlicense",

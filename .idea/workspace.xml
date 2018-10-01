@@ -18,13 +18,13 @@
     <session id="1475589179">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
-          <entry key="project.open.time.0" value="4" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.0" value="5" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -46,7 +46,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="7" />
-          <entry key="json" value="31" />
+          <entry key="json" value="32" />
           <entry key="md" value="3" />
           <entry key="php" value="341" />
           <entry key="txt" value="57" />
@@ -55,7 +55,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Git file" value="7" />
-          <entry key="JSON" value="31" />
+          <entry key="JSON" value="32" />
           <entry key="Markdown" value="3" />
           <entry key="PHP" value="341" />
           <entry key="PLAIN_TEXT" value="57" />
@@ -91,8 +91,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/Response.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="25" column="64" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
+            <state relative-caret-position="202">
+              <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="42" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -110,6 +110,8 @@
       <find>TMP</find>
       <find>AbstractTem</find>
       <find>auth</find>
+      <find>json</find>
+      <find>\/\*\*\n\/\/\	 \* \@param string \$name\n\/\/\	 \* \@return mixed\|null\n\/\/\	 \*\/\n\/\/\	public function getJson\(string \$name\)\{\n\/\/\	\	return array_key_exists\(\$name\, \$this\-\&gt;json\) \? \$this\-\&gt;json\[\$name\] \: null\;\n\/\/\	\}</find>
     </findStrings>
     <dirStrings>
       <dir>D:\StormProjects\Api\api</dir>
@@ -146,6 +148,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,7 +165,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -205,7 +207,8 @@
       <workItem from="1537599120422" duration="486000" />
       <workItem from="1537716364131" duration="46000" />
       <workItem from="1538150315626" duration="266000" />
-      <workItem from="1538383852006" duration="12000" />
+      <workItem from="1538383852006" duration="49000" />
+      <workItem from="1538383993757" duration="127000" />
     </task>
     <task id="LOCAL-00001" summary="gitignore">
       <created>1536986770403</created>
@@ -277,17 +280,31 @@
       <option name="project" value="LOCAL" />
       <updated>1538150329608</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="test">
+      <created>1538383877037</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1538383877037</updated>
+    </task>
+    <task id="LOCAL-00012" summary="test">
+      <created>1538383889496</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1538383889496</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6032000" />
+    <option name="totallyTimeSpent" value="6196000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35607675" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35980812" />
       <window_info id="Structure" order="1" side_tool="true" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
@@ -358,6 +375,9 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/AbstractMethod.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/AbstractConfig.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -368,13 +388,10 @@
     <entry file="file://$PROJECT_DIR$/api/Result.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/AbstractMethod.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/Response.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="25" column="64" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
+        <state relative-caret-position="202">
+          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="42" selection-end-column="5" />
         </state>
       </provider>
     </entry>
