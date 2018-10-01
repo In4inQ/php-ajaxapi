@@ -23,7 +23,7 @@ class Response{
 
 		$this->get = array_map('urldecode', $_GET);
 
-		if($_SERVER["CONTENT_TYPE"] === 'application/json'){
+		if(stripos($_SERVER["CONTENT_TYPE"], 'application/json')){
 			$data = file_get_contents('php://input');
 			$data = json_decode($data, true);
 			if($data){
