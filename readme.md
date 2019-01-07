@@ -87,7 +87,7 @@ if($config->hasMethod($method)){
     
     //next string for example    
     if($method->getOption('someOption') === 'someValue'){
-        var_dump($method->execute($response->get)); //array [result, error]
+        echo $method->execute($response->get);
     }
     
 }
