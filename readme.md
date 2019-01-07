@@ -29,7 +29,7 @@ class Something extends AbstractMethod{
     /**
      * @return array
      */
-    protected public function getOptions() : array{
+    protected function getOptions() : array{
         return [
             'someOption' => 'someValue',
             'vars' => [
@@ -47,7 +47,7 @@ class Something extends AbstractMethod{
      * @param array $vars
      * @return mixed
      */
-    protected public function start(array $vars){
+    protected function start(array $vars){
         //..do something
         //throw something
         //return something
