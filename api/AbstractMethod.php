@@ -34,8 +34,9 @@ abstract class AbstractMethod{
 
 		try{
 
-			$newData = $this->buildData($data);
-			$response = $this->start($newData);
+			$response = $this->start(
+				$this->buildData($data)
+			);
 
 		}catch (Exception $e){
 
@@ -108,7 +109,7 @@ abstract class AbstractMethod{
 
 				}else{
 
-					$value = null;
+					$value = '';
 
 				}
 
@@ -120,13 +121,35 @@ abstract class AbstractMethod{
 			}
 
 			//Проверка и модификация типа
-			$value = new Types($value, array_key_exists('type', $var_data) ? $var_data['type'] : '');
+			$defaultTypes = [
+				'string' => Types\Str::class,
+				'number' => Types\Number::class,
+				'bool'   => Types\Boolean::class,
+				'boolean' => Types\Boolean::class,
+				'object'  => Types\Json::class,
+				'array'   => Types\Arr::class,
+				'mixed'   => Types\Mixed::class
+			];
 
-			if(array_key_exists('strict', $var_data) && $var_data['strict'] && !$value->checkType()){
-				throw new Error(Error::BAD_OPTION, ['{var}' => $var]);
+			$type = $var_data['type'];
+
+			if(array_key_exists($type, $defaultTypes)){
+				$type = $defaultTypes[$type];
 			}
 
-			$result[$var] = $value->modType();
+			if(class_exists($type)){
+
+				$type = new $type($value);
+
+				try{
+					$result[$var] = $type->getValue();
+				}catch (Exception $e){
+					throw new Error(Error::BAD_OPTION, ['{var}' => $var]);
+				}
+
+			}else{
+				throw new Error('Type {type} does`t exists', ['{type}' => $type]);
+			}
 
 		}
 
